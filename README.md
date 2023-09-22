@@ -1,6 +1,6 @@
-# vscode-plain-side-bar README
+# vscode-plain-sidebar README
 
-This is the README for your extension "vscode-plain-side-bar". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "vscode-plain-sidebar". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

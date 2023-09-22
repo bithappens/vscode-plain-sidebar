@@ -1,37 +1,57 @@
 {
-	"name": "vscode-plain-side-bar",
-	"displayName": "Plain Side Bar",
-	"description": "A plain and empty side bar for visual studio code. A simple way to declutter the window.",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.75.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^8.1.0",
-		"@types/mocha": "^10.0.1",
-		"@types/node": "^20.6.3",
-		"@types/vscode": "^1.82.0",
-		"glob": "^10.3.5",
-		"mocha": "^10.2.0",
-		"typescript": "^5.2.2",
-		"tslint": "^5.20.1",
-		"vscode-test": "^1.0.0-next.0"
-	}
+  "name": "vscode-plain-sidebar",
+  "displayName": "Plain Sidebar",
+  "description": "A plain and empty sidebar for visual studio code. A simple way to declutter the window.",
+  "publisher": "bithappens",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bithappens/vscode-plain-sidebar"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "plain-sidebar-container",
+          "title": "Empty",
+          "icon": "static/plainSidebar.svg"
+        }
+      ]
+    },
+    "views": {
+      "plain-sidebar-container": [
+        {
+          "type": "webview",
+          "id": "plain-sidebar",
+          "name": ""
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.6.3",
+    "@types/vscode": "^1.82.0",
+    "glob": "^10.3.5",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "tslint": "^5.20.1",
+    "vscode-test": "^1.0.0-next.0"
+  }
 }

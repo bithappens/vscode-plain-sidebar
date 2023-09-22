@@ -1,9 +1,9 @@
 {
   "name": "vscode-plain-sidebar",
   "displayName": "Plain Sidebar",
-  "description": "A plain and empty sidebar for visual studio code. A simple way to declutter the window.",
+  "description": "Declutter vscode with a plain and empty sidebar.",
   "publisher": "bithappens",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -11,8 +11,17 @@
     "type": "git",
     "url": "https://github.com/bithappens/vscode-plain-sidebar"
   },
+  "icon": "static/icon.png",
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "empty",
+    "focus",
+    "declutter",
+    "space",
+    "simple",
+    "minimal"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -36,22 +45,15 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "npm run compile && npm run lint",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "lint": "eslint src --ext ts"
   },
   "devDependencies": {
-    "@types/glob": "^8.1.0",
-    "@types/mocha": "^10.0.1",
     "@types/node": "^20.6.3",
     "@types/vscode": "^1.82.0",
-    "glob": "^10.3.5",
-    "mocha": "^10.2.0",
     "typescript": "^5.2.2",
-    "tslint": "^5.20.1",
-    "vscode-test": "^1.0.0-next.0"
+    "tslint": "^5.20.1"
   }
 }

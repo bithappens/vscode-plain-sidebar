@@ -20,7 +20,8 @@ jobs:
         id: package
         run: npm run package
       - name: Upload artifact on github
-        uses: actions/upload-artifact@v3
+        uses: alexellis/upload-assets@0.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: Extension Package
-          path: "*.vsix"
+          asset_paths: '["./*.vsix"]'

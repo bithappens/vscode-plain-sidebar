@@ -22,7 +22,8 @@
     "declutter",
     "space",
     "simple",
-    "minimal"
+    "minimal",
+    "less is more"
   ],
   "main": "./out/extension.js",
   "contributes": {

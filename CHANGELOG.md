@@ -7,6 +7,18 @@ It follows the ideas of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - Everything is released :-)
 
+## [1.0.1] - 2023-09-23
+
+## Added
+
+- CI workflow for github
+- Badges for the Open VSX Registry
+
+## Changed
+
+- More details in README.md
+
+
 ## [1.0.0] - 2023-09-23
 
 ### Added

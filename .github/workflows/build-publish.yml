@@ -22,4 +22,4 @@ jobs:
       - name: Upload artifact on github
         uses: actions/upload-artifact@v3
         with:
-          path: '*.vsix'
+          path: vscode-plain-sidebar-1.0.0.vsix

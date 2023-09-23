@@ -4,7 +4,7 @@
   "description": "Declutter vscode with a plain and empty sidebar.",
   "publisher": "bithappens",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.75.0"
   },

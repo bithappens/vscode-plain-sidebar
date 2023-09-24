@@ -22,7 +22,7 @@ None. This extension is just an empty sidebar without any further functionality.
 
 ## Contributing
 
-I am always lookings for new ideas and feedback.
+I am always looking for new ideas and feedback.
 Before you open a pull request, please [create an issue](https://github.com/bithappens/vscode-plain-sidebar/issues) about your thoughts first.
 
 

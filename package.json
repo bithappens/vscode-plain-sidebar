@@ -1,10 +1,10 @@
 {
   "name": "vscode-plain-sidebar",
   "displayName": "Plain Sidebar",
-  "description": "Declutter vscode with a plain and empty sidebar.",
+  "description": "Declutter the window with a plain and empty sidebar.",
   "publisher": "bithappens",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -23,8 +23,14 @@
     "space",
     "simple",
     "minimal",
-    "less is more"
+    "less is more",
+    "hello world"
   ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
@@ -50,19 +56,18 @@
     "vscode:prepublish": "npm run compile && npm run lint",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "eslint src --ext ts",
+    "lint": "eslint src",
     "package": "vsce package"
   },
   "devDependencies": {
     "@types/node": "^20.6.3",
     "@types/vscode": "^1.75.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "eslint": "^8.50.0",
-    "eslint-config-standard-with-typescript": "^39.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "typescript": "^5.2.2",
-    "@vscode/vsce": "^2.21.0"
+    "@vscode/vsce": "^3.0.0",
+    "eslint": "^9.9.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.9.0",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
   }
 }

@@ -7,17 +7,30 @@ It follows the ideas of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - Everything is released :-)
 
+## [1.0.2] - 2024-08-18
+
+### Added
+
+- Activation in untrusted environments
+
+### Changed
+
+- Update dependencies
+
+### Fixed
+
+- Unify badges
+
 ## [1.0.1] - 2023-09-23
 
-## Added
+### Added
 
 - CI workflow for github
 - Badges for the Open VSX Registry
 
-## Changed
+### Changed
 
 - More details in README.md
-
 
 ## [1.0.0] - 2023-09-23
 

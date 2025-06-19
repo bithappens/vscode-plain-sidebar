@@ -5,6 +5,14 @@ It follows the ideas of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
+- Everything is released :-)
+
+## [1.0.3] - 2025-06-13
+
+### Added
+
+- Add ctrl+shift+q as keyboard shortcut to activate the panel
+
 ### Changed
 
 - Update dependencies

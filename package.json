@@ -4,7 +4,7 @@
   "description": "Declutter the window with a plain and empty sidebar.",
   "publisher": "bithappens",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -47,10 +47,18 @@
         {
           "type": "webview",
           "id": "plain-sidebar",
-          "name": ""
+          "name": "",
+          "icon": "static/plainSidebar.svg"
         }
       ]
-    }
+    },
+    "keybindings": [
+      {
+        "key": "ctrl+shift+q",
+        "mac": "cmd+shift+q",
+        "command": "workbench.view.extension.plain-sidebar-container"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile && npm run lint",

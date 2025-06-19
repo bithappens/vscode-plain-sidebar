@@ -16,6 +16,7 @@ It follows the ideas of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 ### Changed
 
 - Update dependencies
+- Update github workflow
 
 ## [1.0.2] - 2024-08-18
 

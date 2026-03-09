@@ -12,6 +12,8 @@ It follows the ideas of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 ### Changed
 
 - Explicitly prefer execution in the UI over workspace execution
+- Update dependencies
+- Update github workflow
 
 ## [1.0.3] - 2025-06-13
 

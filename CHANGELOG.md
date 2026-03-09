@@ -7,6 +7,12 @@ It follows the ideas of [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 - Everything is released :-)
 
+## [1.0.4] - 2026-03-09
+
+### Changed
+
+- Explicitly prefer execution in the UI over workspace execution
+
 ## [1.0.3] - 2025-06-13
 
 ### Added

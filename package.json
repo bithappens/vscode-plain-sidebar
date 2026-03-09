@@ -4,7 +4,7 @@
   "description": "Declutter the window with a plain and empty sidebar.",
   "publisher": "bithappens",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -31,6 +31,10 @@
       "supported": true
     }
   },
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
